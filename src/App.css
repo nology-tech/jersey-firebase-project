@@ -17,3 +17,14 @@ form > * {
   margin: 10px auto;
   width: 250px;
 }
+
+section > div {
+  width: 200px;
+  background-color: gold;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.completed {
+  background-color: palegreen;
+}
