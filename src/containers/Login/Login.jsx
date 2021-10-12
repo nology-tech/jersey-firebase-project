@@ -4,11 +4,11 @@ const Login = props => {
   const { handleLogin, handleLogout } = props;
 
   return (
-    <div>
-      <h2>Login works</h2>
-      <button onClick={handleLogin}>Sign in</button>
-      <button onClick={handleLogout}>Sign out</button>
-    </div>
+    <section>
+      <h2>Please Login to continue</h2>
+      <button onClick={handleLogin}>Log in</button>
+      <button onClick={handleLogout}>Log out</button>
+    </section>
   );
 };
 

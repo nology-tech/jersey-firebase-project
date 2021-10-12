@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Home = props => {
   const { user } = props;
 
@@ -14,15 +15,19 @@ const Home = props => {
     } = user;
 
     homeJSX = (
-      <div>
+      <section>
         <h2>{displayName}</h2>
         <p>{email}</p>
         <p>{lastSignInTime}</p>
         <img src={photoURL} alt={displayName} />
-      </div>
+      </section>
     );
   } else {
-    homeJSX = <h2>No User</h2>;
+    homeJSX = (
+      <section>
+        <h2>No User</h2>
+      </section>
+    );
   }
 
   return homeJSX;
