@@ -77,7 +77,7 @@ const Todo = () => {
   const todoJSX = todos.map(todo => {
     const { id, title, description, isCompleted } = todo;
     return (
-      <div className={isCompleted && "completed"} key={id}>
+      <div className={isCompleted ? "completed" : ""} key={id}>
         <p>{title}</p>
         <p>{description}</p>
         <button id={id} onClick={updateTodo}>
