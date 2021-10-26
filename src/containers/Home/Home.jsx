@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../../context/UserContext/UserContext";
 
-
-const Home = props => {
-  const { user } = props;
+const Home = () => {
+  const { user } = useContext(UserContext);
 
   let homeJSX;
 

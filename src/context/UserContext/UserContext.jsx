@@ -28,7 +28,8 @@ const UserProvider = props => {
   const userContext = {
     user,
     handleLogin,
-    handleLogout
+    handleLogout,
+    message: "hello from the context"
   };
 
   return <UserContext.Provider value={userContext}>{props.children}</UserContext.Provider>;
